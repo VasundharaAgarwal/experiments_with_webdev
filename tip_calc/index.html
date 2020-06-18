@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="colourtime.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <title>
+            checking
+        </title>
+    </head>
+    <body>
+        <h1>Tip Calculator</h1>
+        <form>
+            <div class="input_form">
+                <label for="amt">What is the bill amount?</label> <br>
+                <input name="amt" type ="number" id = "amt" placeholder="Bill Amount">
+            </div>
+            <div class="input_form">
+                <label for="service"> How was your service? </label> <br>
+                <select name="service_quality" id="service">
+                    <option value ="0.3"> Excellent </option>
+                    <option value ="0.15"> Satisfied </option>
+                    <option value ="0.05"> Terrible </option>
+                </select>
+            </div>
+            <div class="input_form">
+                <label for="people">How many people are sharing the bill?</label> <br>
+                <input name="people" id="people" placeholder="Number of people">
+            </div>
+        
+        <div class="input_form">
+            <button type="button">Calculate</button>
+        </div>
+        </form>
+        <p id="tipdisplay">You have to pay <span id="amteach">0.00</span> each.</p>
+    </body>
+    <script src = "jsscript.js"></script>
+</html>
